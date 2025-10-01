@@ -9,7 +9,6 @@ from langgraph.graph import StateGraph,START,END
 from langgraph.graph.message import add_messages
 
 
-groq_api_key="Your Groq API Key"
 langsmith="Your Langsmith Key"
 
 os.environ["LANGCHAIN_API_KEY"] = langsmith
@@ -50,4 +49,5 @@ while True:
     print(event.values())
     for value in event.values():
       print(value['messages'])
+
       print("Assistant:",value["messages"].content)
