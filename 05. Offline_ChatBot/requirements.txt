@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+streamlit
+onnxruntime
+tokenizers
+transformers
+torch
+requests
